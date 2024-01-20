@@ -17,6 +17,8 @@
 		4FA095912B5BE5430013120A /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA095902B5BE5430013120A /* ButtonStyle.swift */; };
 		4FA095932B5BEEA60013120A /* FrameWorkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA095922B5BEEA60013120A /* FrameWorkViewModel.swift */; };
 		4FA095952B5C25160013120A /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA095942B5C25160013120A /* SafariView.swift */; };
+		4FA095972B5C4CEE0013120A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA095962B5C4CEE0013120A /* MainView.swift */; };
+		4FA095992B5C4EEE0013120A /* FrameWorkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA095982B5C4EEE0013120A /* FrameWorkListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		4FA095902B5BE5430013120A /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		4FA095922B5BEEA60013120A /* FrameWorkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkViewModel.swift; sourceTree = "<group>"; };
 		4FA095942B5C25160013120A /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		4FA095962B5C4CEE0013120A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4FA095982B5C4EEE0013120A /* FrameWorkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				4F23D41B2B56FFAD00F7A90C /* Apple_FrameworksApp.swift */,
+				4FA095922B5BEEA60013120A /* FrameWorkViewModel.swift */,
+				4FA095962B5C4CEE0013120A /* MainView.swift */,
 				4F23D41D2B56FFAD00F7A90C /* ContentView.swift */,
+				4FA095982B5C4EEE0013120A /* FrameWorkListView.swift */,
 				4FA0958E2B5BE0260013120A /* DetailView.swift */,
 				4FA095942B5C25160013120A /* SafariView.swift */,
-				4FA095922B5BEEA60013120A /* FrameWorkViewModel.swift */,
 				4FA095902B5BE5430013120A /* ButtonStyle.swift */,
 				4F23D42B2B5704E600F7A90C /* FrameWorkTitle.swift */,
 				4F23D4292B57013E00F7A90C /* Framework.swift */,
@@ -156,9 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F23D41E2B56FFAD00F7A90C /* ContentView.swift in Sources */,
+				4FA095972B5C4CEE0013120A /* MainView.swift in Sources */,
 				4FA095932B5BEEA60013120A /* FrameWorkViewModel.swift in Sources */,
 				4F23D42A2B57013E00F7A90C /* Framework.swift in Sources */,
 				4F23D41C2B56FFAD00F7A90C /* Apple_FrameworksApp.swift in Sources */,
+				4FA095992B5C4EEE0013120A /* FrameWorkListView.swift in Sources */,
 				4FA095952B5C25160013120A /* SafariView.swift in Sources */,
 				4FA095912B5BE5430013120A /* ButtonStyle.swift in Sources */,
 				4FA0958F2B5BE0260013120A /* DetailView.swift in Sources */,

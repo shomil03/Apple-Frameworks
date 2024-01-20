@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  FrameWorkListView.swift
 //  Apple-Frameworks
 //
-//  Created by Shomil Singh on 16/01/24.
+//  Created by Shomil Singh on 21/01/24.
 //
 
 import SwiftUI
 
-struct FrameworkGridView: View {
+struct FrameWorkListView: View {
     
     @StateObject var viewmodel = FrameWorkViewModel()
     @State private var ispresented : Bool = false
@@ -16,10 +16,10 @@ struct FrameworkGridView: View {
     var body: some View {
         NavigationStack{
             ScrollView{
-                LazyVGrid(columns: viewmodel.columns){
+                LazyVGrid(columns: [GridItem(.flexible())]){
                     ForEach(MockData.frameworks) { framework in
                         NavigationLink(destination: DetailView(framework: framework, ListView: ListView), label: {
-                            FrameWorkTitleView(framework: framework,ListView: ListView)
+                            FrameWorkTitleView(framework: framework, ListView: ListView)
                         })
                     }
                 }
@@ -28,24 +28,26 @@ struct FrameworkGridView: View {
             .toolbar{
                 ToolbarItem(placement: .topBarTrailing, content: {
                     Button(action: {
-                        ListView = true
+                        ListView = false
                     }, label: {
-                        Label("", systemImage: "list.bullet.clipboard")
+                        Label("", systemImage: "square.grid.2x2.fill")
                             .labelsHidden()
                             .foregroundStyle(Color.green)
                     })
                 })
             }
             
-
+            
             
             
         }
         .preferredColorScheme(.dark)
         .tint(Color.primary)
     }
-}
+        
+    }
+
 
 #Preview {
-    FrameworkGridView( ListView: .constant(false))
+    FrameWorkListView(ListView: .constant(true))
 }

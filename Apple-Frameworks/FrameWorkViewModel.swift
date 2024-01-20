@@ -9,4 +9,9 @@ import SwiftUI
 
 final class FrameWorkViewModel : ObservableObject {
     
+    var columns : [GridItem] = [ GridItem(.flexible()) ,
+                                 GridItem(.flexible()),
+                                 GridItem(.flexible())
+    ]
+    
 }
