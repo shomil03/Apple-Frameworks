@@ -7,18 +7,32 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FrameworkGridView: View {
+    
+    var columns : [GridItem] = [ GridItem(.flexible()) ,
+                                 GridItem(.flexible()),
+                                 GridItem(.flexible())
+    ]
+    @StateObject var viewmodel = FrameWorkViewModel()
+    @State private var ispresented : Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            ScrollView{
+                LazyVGrid(columns: columns){
+                    ForEach(MockData.frameworks) { framework in
+                        NavigationLink(destination: DetailView(framework: framework), label: {
+                            FrameWorkTitleView(framework: framework)
+                        })
+                    }
+                }
+            }
+            .navigationTitle("🍎 framework")
         }
-        .padding()
+        .preferredColorScheme(.dark)
     }
 }
 
 #Preview {
-    ContentView()
+    FrameworkGridView()
 }
