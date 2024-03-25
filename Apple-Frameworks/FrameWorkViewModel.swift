@@ -9,9 +9,9 @@ import SwiftUI
 
 final class FrameWorkViewModel : ObservableObject {
     
-    var columns : [GridItem] = [ GridItem(.flexible()) ,
-                                 GridItem(.flexible()),
-                                 GridItem(.flexible())
-    ]
+    @State var height : CGFloat = 100
+//    var gridcolumns : [GridItem] = [ GridItem(.adaptive(minimum: CGFloat(height)))]
+//    var listcolumn : [GridItem] = [GridItem(.adaptive(minimum: 200))]
+    
     
 }

@@ -17,7 +17,8 @@ struct MainView: View {
             
             if(ListView){
                 
-                FrameWorkListView(ListView: $ListView)
+//                FrameWorkListView(ListView: $ListView)
+                FrameworkGridView()
                 
             }
             
@@ -25,7 +26,7 @@ struct MainView: View {
             else
             {
                 
-                FrameworkGridView(ListView: $ListView)
+                FrameworkGridView()
                 
             }
         }

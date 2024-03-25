@@ -28,7 +28,9 @@ struct FrameWorkListView: View {
             .toolbar{
                 ToolbarItem(placement: .topBarTrailing, content: {
                     Button(action: {
-                        ListView = false
+                        withAnimation{
+                            ListView.toggle()
+                        }
                     }, label: {
                         Label("", systemImage: "square.grid.2x2.fill")
                             .labelsHidden()
